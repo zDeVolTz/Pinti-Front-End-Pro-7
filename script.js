@@ -41,11 +41,11 @@ if (personValue.personSport === null || personValue.personSport  === undefined){
 
 let result = '';
 let keysCount = Object.keys(personMessage).length;
-let count = 0;
+let count = 1;
 /*хотел применнить именно этот цикл поэтому выбрал такую реализацию где к последнему значению из обьекта не добавиться перенос строки */
 for (let key in personMessage){
     result += personMessage[key];
-    if (count < keysCount - 1){
+    if (count < keysCount){
         result +="\n";
         count++;
     }
